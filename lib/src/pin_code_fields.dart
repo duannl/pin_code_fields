@@ -1,4 +1,4 @@
-part of pin_code_fields;
+part of date_fields;
 
 /// Pin code text fields which automatically changes focus and validates
 class PinCodeTextField extends StatefulWidget {
@@ -801,6 +801,14 @@ class _PinCodeTextFieldState extends State<PinCodeTextField>
               ),
             )),
       );
+
+      if (i != widget.length - 1) {
+        if (i == 1 || i == 3) {
+          result.add(const SizedBox(width: 30));
+        } else {
+          result.add(const SizedBox(width: 5));
+        }
+      }
     }
     return result;
   }
