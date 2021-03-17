@@ -1,4 +1,4 @@
-part of pin_code_fields;
+part of date_fields;
 
 class PinTheme {
   /// Colors of the input fields which have inputs. Default is [Colors.green]
